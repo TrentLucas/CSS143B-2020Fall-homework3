@@ -29,7 +29,7 @@ public class Problem2Test {
     @Test
     public void testIterativeReverse() {
         int[][] inputs = {
-                //{},
+                {},
                 {1},
                 {1, 2},
                 {3, 3},
@@ -37,7 +37,7 @@ public class Problem2Test {
                 {3, 4, 5, 6, 7},
         };
         int[][] expected = {
-                //{},
+                {},
                 {1},
                 {2, 1},
                 {3, 3},
