@@ -37,6 +37,7 @@ public class Problem1Test {
             Integer val = stack.pop();
             assertNotNull(val);
             assertEquals(stackSize - i - 1, val.intValue());
+            //System.out.println(stack.size());
             assertEquals(stackSize - i - 1, stack.size());
         }
         assertEquals(0, stack.size());
@@ -75,7 +76,6 @@ public class Problem1Test {
         for (int input : inputs) {
             minStack.push(input);
         }
-
         for (int i = 0; i < inputs.length; i++) {
             Integer actual = minStack.getMin();
             Integer expect = inputs[inputs.length - i - 1];
@@ -110,7 +110,6 @@ public class Problem1Test {
 
         for (int i = 0; i < inputs.length; i++) {
             int[] numbersToPush = inputs[i];
-
             MinStack minStack = new MinStack(numbersToPush.length);
 
             for (int toPush : numbersToPush) {
